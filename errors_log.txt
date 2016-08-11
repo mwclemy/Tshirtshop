@@ -1,0 +1,39 @@
+ERRNO: 2
+TEXT: require_once(inexistent_file.php): failed to open stream: No such file or directory
+LOCATION: C:\xampp\htdocs\tshirtshop\index.php, line 14, at July 13, 2016, 7:31 pm
+Showing backtrace:
+require_once() # line   14, file: C:\xampp\htdocs\tshirtshop\index.php
+
+
+
+ERRNO: 2
+TEXT: require_once(inexistent_file.php): failed to open stream: No such file or directory
+LOCATION: C:\xampp\htdocs\tshirtshop\index.php, line 14, at July 13, 2016, 7:32 pm
+Showing backtrace:
+require_once() # line   14, file: C:\xampp\htdocs\tshirtshop\index.php
+
+
+
+ERRNO: 2
+TEXT: require_once(inexistent_file.php): failed to open stream: No such file or directory
+LOCATION: C:\xampp\htdocs\tshirtshop\index.php, line 14, at July 13, 2016, 7:38 pm
+Showing backtrace:
+require_once() # line   14, file: C:\xampp\htdocs\tshirtshop\index.php
+
+
+
+ERRNO: 2
+TEXT: require_once(inexistent_file.php): failed to open stream: No such file or directory
+LOCATION: C:\xampp\htdocs\tshirtshop\index.php, line 14, at July 13, 2016, 8:04 pm
+Showing backtrace:
+require_once() # line   14, file: C:\xampp\htdocs\tshirtshop\index.php
+
+
+
+ERRNO: 2
+TEXT: require_once(inexistent_file.php): failed to open stream: No such file or directory
+LOCATION: C:\xampp\htdocs\tshirtshop\index.php, line 14, at July 13, 2016, 8:04 pm
+Showing backtrace:
+require_once() # line   14, file: C:\xampp\htdocs\tshirtshop\index.php
+
+
