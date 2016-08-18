@@ -88,3 +88,8 @@ list-style-type: none;
 margin: 0px;
 padding: 5px 0px;
 }
+.attributes {
+clear: both;
+display: block;
+padding-top: 5px;
+}

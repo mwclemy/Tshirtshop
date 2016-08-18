@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30-dev/74, created on 2016-08-10 19:39:54
+/* Smarty version 3.1.30-dev/74, created on 2016-08-15 13:40:16
   from "C:\xampp\htdocs\tshirtshop\presentation\templates\products_list.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30-dev/74',
-  'unifunc' => 'content_57ab66eacd97f5_72329567',
+  'unifunc' => 'content_57b1aa208a9737_71097944',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '683da02b40c7485503ebdc5d9de7726634066f58' => 
     array (
       0 => 'C:\\xampp\\htdocs\\tshirtshop\\presentation\\templates\\products_list.tpl',
-      1 => 1470850791,
+      1 => 1471260936,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_57ab66eacd97f5_72329567 (Smarty_Internal_Template $_smarty_tpl) {
+function content_57b1aa208a9737_71097944 (Smarty_Internal_Template $_smarty_tpl) {
 if (!is_callable('smarty_function_load_presentation_object')) require_once 'C:\\xampp\\htdocs\\tshirtshop\\presentation\\smarty_plugins\\function.load_presentation_object.php';
 ?>
 
@@ -92,6 +92,43 @@ Price:
 <span class="price"><?php echo $_smarty_tpl->tpl_vars['obj']->value->mProducts[(isset($_smarty_tpl->tpl_vars['__smarty_section_k']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_k']->value['index'] : null)]['price'];?>
 </span>
 <?php }?>
+</p>
+
+<p class="attributes">
+
+<?php
+$__section_l_1_saved = isset($_smarty_tpl->tpl_vars['__smarty_section_l']) ? $_smarty_tpl->tpl_vars['__smarty_section_l'] : false;
+$__section_l_1_loop = (is_array(@$_loop=$_smarty_tpl->tpl_vars['obj']->value->mProducts[(isset($_smarty_tpl->tpl_vars['__smarty_section_k']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_k']->value['index'] : null)]['attributes']) ? count($_loop) : max(0, (int) $_loop));
+$__section_l_1_total = $__section_l_1_loop;
+$_smarty_tpl->tpl_vars['__smarty_section_l'] = new Smarty_Variable(array());
+if ($__section_l_1_total != 0) {
+for ($__section_l_1_iteration = 1, $_smarty_tpl->tpl_vars['__smarty_section_l']->value['index'] = 0; $__section_l_1_iteration <= $__section_l_1_total; $__section_l_1_iteration++, $_smarty_tpl->tpl_vars['__smarty_section_l']->value['index']++){
+$_smarty_tpl->tpl_vars['__smarty_section_l']->value['first'] = ($__section_l_1_iteration == 1);
+$_smarty_tpl->tpl_vars['__smarty_section_l']->value['last'] = ($__section_l_1_iteration == $__section_l_1_total);
+?>
+
+<?php if ((isset($_smarty_tpl->tpl_vars['__smarty_section_l']->value['first']) ? $_smarty_tpl->tpl_vars['__smarty_section_l']->value['first'] : null) || $_smarty_tpl->tpl_vars['obj']->value->mProducts[(isset($_smarty_tpl->tpl_vars['__smarty_section_k']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_k']->value['index'] : null)]['attributes'][(isset($_smarty_tpl->tpl_vars['__smarty_section_l']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_l']->value['index'] : null)]['attribute_name'] !== $_smarty_tpl->tpl_vars['obj']->value->mProducts[(isset($_smarty_tpl->tpl_vars['__smarty_section_k']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_k']->value['index'] : null)]['attributes'][(isset($_smarty_tpl->tpl_vars['__smarty_section_l']->value['index_prev']) ? $_smarty_tpl->tpl_vars['__smarty_section_l']->value['index_prev'] : null)]['attribute_name']) {
+echo $_smarty_tpl->tpl_vars['obj']->value->mProducts[(isset($_smarty_tpl->tpl_vars['__smarty_section_k']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_k']->value['index'] : null)]['attributes'][(isset($_smarty_tpl->tpl_vars['__smarty_section_l']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_l']->value['index'] : null)]['attribute_name'];?>
+:
+<select name="attr_<?php echo $_smarty_tpl->tpl_vars['obj']->value->mProducts[(isset($_smarty_tpl->tpl_vars['__smarty_section_k']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_k']->value['index'] : null)]['attributes'][(isset($_smarty_tpl->tpl_vars['__smarty_section_l']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_l']->value['index'] : null)]['attribute_name'];?>
+">
+<?php }?>
+
+<option value="<?php echo $_smarty_tpl->tpl_vars['obj']->value->mProducts[(isset($_smarty_tpl->tpl_vars['__smarty_section_k']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_k']->value['index'] : null)]['attributes'][(isset($_smarty_tpl->tpl_vars['__smarty_section_l']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_l']->value['index'] : null)]['attribute_value'];?>
+">
+<?php echo $_smarty_tpl->tpl_vars['obj']->value->mProducts[(isset($_smarty_tpl->tpl_vars['__smarty_section_k']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_k']->value['index'] : null)]['attributes'][(isset($_smarty_tpl->tpl_vars['__smarty_section_l']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_l']->value['index'] : null)]['attribute_value'];?>
+
+</option>
+
+<?php if ((isset($_smarty_tpl->tpl_vars['__smarty_section_l']->value['last']) ? $_smarty_tpl->tpl_vars['__smarty_section_l']->value['last'] : null) || $_smarty_tpl->tpl_vars['obj']->value->mProducts[(isset($_smarty_tpl->tpl_vars['__smarty_section_k']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_k']->value['index'] : null)]['attributes'][(isset($_smarty_tpl->tpl_vars['__smarty_section_l']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_l']->value['index'] : null)]['attribute_name'] !== $_smarty_tpl->tpl_vars['obj']->value->mProducts[(isset($_smarty_tpl->tpl_vars['__smarty_section_k']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_k']->value['index'] : null)]['attributes'][(isset($_smarty_tpl->tpl_vars['__smarty_section_l']->value['index_next']) ? $_smarty_tpl->tpl_vars['__smarty_section_l']->value['index_next'] : null)]['attribute_name']) {?>
+</select>
+<?php }
+}
+}
+if ($__section_l_1_saved) {
+$_smarty_tpl->tpl_vars['__smarty_section_l'] = $__section_l_1_saved;
+}
+?>
 </p>
 </td>
 <?php if ((isset($_smarty_tpl->tpl_vars['__smarty_section_k']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_k']->value['index'] : null)%2 != 0 && !(isset($_smarty_tpl->tpl_vars['__smarty_section_k']->value['first']) ? $_smarty_tpl->tpl_vars['__smarty_section_k']->value['first'] : null) || (isset($_smarty_tpl->tpl_vars['__smarty_section_k']->value['last']) ? $_smarty_tpl->tpl_vars['__smarty_section_k']->value['last'] : null)) {?>

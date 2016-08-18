@@ -84,6 +84,9 @@ Link::ToProduct($this->mProducts[$i]['product_id']);
 if ($this->mProducts[$i]['thumbnail'])
 $this->mProducts[$i]['thumbnail'] =
 Link::Build('product_images/' . $this->mProducts[$i]['thumbnail']);
+
+$this->mProducts[$i]['attributes'] =
+Catalog::GetProductAttributes($this->mProducts[$i]['product_id']);
 }
 }
 }

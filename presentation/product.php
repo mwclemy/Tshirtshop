@@ -42,9 +42,13 @@ $this->mLinkToContinueShopping = Link::ToIndex($page);
 if ($this->mProduct['image'])
 $this->mProduct['image'] =
 Link::Build('product_images/' . $this->mProduct['image']);
+
 if ($this->mProduct['image_2'])
 $this->mProduct['image_2'] =
 Link::Build('product_images/' . $this->mProduct['image_2']);
+$this->mProduct['attributes'] =
+Catalog::GetProductAttributes($this->mProduct['product_id']);
+
 $this->mLocations = Catalog::GetProductLocations($this->_mProductId);
 // Build links for product departments and categories pages
 for ($i = 0; $i < count($this->mLocations); $i++)

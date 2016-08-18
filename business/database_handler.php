@@ -154,5 +154,6 @@ public static function GetOne($sqlQuery, $params = null)
 	// Return the query results
 	return $result;
 }
+
 }
 ?>
