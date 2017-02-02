@@ -14,7 +14,7 @@ Vagrant.configure("2") do |config|
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "ubuntu/trusty64"
   # Enable provisioning with a shell script bootstrap.sh 
-  config.vm.provision :shell, path: "bootstrap.sh"
+  #config.vm.provision :shell, path: "bootstrap.sh"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -26,6 +26,10 @@ Vagrant.configure("2") do |config|
   # accessing "localhost:8080" will access port 80 on the guest machine.
   config.vm.network "forwarded_port", guest: 80, host: 8080
 
+  # create a hostname
+
+  config.vm.hostname = "local.dev"
+
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
   # config.vm.network "private_network", ip: "192.168.33.10"
@@ -35,11 +39,15 @@ Vagrant.configure("2") do |config|
   # your network.
   # config.vm.network "public_network"
 
+  # config.vm.provision "puppet" do |puppet|
+  #     puppet.options = ["--templatedir", "/tmp/vagrant-puppet/templates"]
+  # end
+
   # Share an additional folder to the guest VM. The first argument is
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
-  # config.vm.synced_folder "../data", "/vagrant_data"
+  #config.vm.synced_folder "templates", "/tmp/vagrant-puppet/templates"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
@@ -74,8 +82,6 @@ Vagrant.configure("2") do |config|
   config.vm.provision "puppet" do |puppet|
   	puppet.manifests_path = "manifests"
     puppet.manifest_file = "default.pp"
-  	puppet.environment_path = "puppet/environments"
-  	puppet.enviroment = "testenv"
-  	puppet.module_path = "modules"
+    puppet.module_path = "modules"
   end
 end
